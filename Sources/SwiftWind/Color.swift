@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 extension Color {
     
     static let slate50: Color = Color(red: 248/255, green: 250/255, blue: 252/255)
