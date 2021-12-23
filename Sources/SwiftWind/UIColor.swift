@@ -5,7 +5,7 @@
 //  Created by Cristian Rojas on 23/12/2021.
 //
 
-import UIColor
+import UIKit
 
 extension UIColor {
     
