@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Cristian Rojas on 23/12/2021.
 //
@@ -8,7 +8,315 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-extension Color {
+public struct WindColor {
+    let c50: Color
+    let c100: Color
+    let c200: Color
+    let c300: Color
+    let c400: Color
+    let c500: Color
+    let c600: Color
+    let c700: Color
+    let c800: Color
+    let c900: Color
+}
+
+@available(iOS 13.0, *)
+public extension WindColor {
+    
+    static let primary = WindColor.slate
+    static let secondary = WindColor.slate
+    static let tertiary = WindColor.slate
+    
+    static let slate = WindColor(
+        c50: .slate50,
+        c100: .slate100,
+        c200: .slate200,
+        c300: .slate300,
+        c400: .slate500,
+        c500: .slate500,
+        c600: .slate600,
+        c700: .slate700,
+        c800: .slate800,
+        c900: .slate900
+    )
+    
+    static let gray = WindColor(
+        c50: .gray50,
+        c100: .gray100,
+        c200: .gray200,
+        c300: .gray300,
+        c400: .gray400,
+        c500: .gray500,
+        c600: .gray600,
+        c700: .gray700,
+        c800: .gray800,
+        c900: .gray900
+    )
+    
+    static let zinc = WindColor(
+        c50: .zinc50,
+        c100: .zinc100,
+        c200: .zinc200,
+        c300: .zinc300,
+        c400: .zinc400,
+        c500: .zinc500,
+        c600: .zinc600,
+        c700: .zinc700,
+        c800: .zinc800,
+        c900: .zinc900
+    )
+    
+    static let neutral = WindColor(
+        c50: .neutral50,
+        c100: .neutral100,
+        c200: .neutral200,
+        c300: .neutral300,
+        c400: .neutral400,
+        c500: .neutral500,
+        c600: .neutral600,
+        c700: .neutral700,
+        c800: .neutral800,
+        c900: .neutral900
+    )
+    
+    static let stone = WindColor(
+        c50: .stone50,
+        c100: .stone100,
+        c200: .stone200,
+        c300: .stone300,
+        c400: .stone400,
+        c500: .stone500,
+        c600: .stone600,
+        c700: .stone700,
+        c800: .stone800,
+        c900: .stone900
+    )
+    
+    static let red = WindColor(
+        c50: .red50,
+        c100: .red100,
+        c200: .red200,
+        c300: .red300,
+        c400: .red400,
+        c500: .red500,
+        c600: .red600,
+        c700: .red700,
+        c800: .red800,
+        c900: .red900
+    )
+    
+    static let orange = WindColor(
+        c50: .orange50,
+        c100: .orange100,
+        c200: .orange200,
+        c300: .orange300,
+        c400: .orange400,
+        c500: .orange500,
+        c600: .orange600,
+        c700: .orange700,
+        c800: .orange800,
+        c900: .orange900
+    )
+    
+    static let amber = WindColor(
+        c50: .amber50,
+        c100: .amber100,
+        c200: .amber200,
+        c300: .amber300,
+        c400: .amber400,
+        c500: .amber500,
+        c600: .amber600,
+        c700: .amber700,
+        c800: .amber800,
+        c900: .amber900
+    )
+    
+    static let yellow = WindColor(
+        c50: .yellow50,
+        c100: .yellow100,
+        c200: .yellow200,
+        c300: .yellow300,
+        c400: .yellow400,
+        c500: .yellow500,
+        c600: .yellow600,
+        c700: .yellow700,
+        c800: .yellow800,
+        c900: .yellow900
+    )
+    
+    static let lime = WindColor(
+        c50: .lime50,
+        c100: .lime100,
+        c200: .lime200,
+        c300: .lime300,
+        c400: .lime400,
+        c500: .lime500,
+        c600: .lime600,
+        c700: .lime700,
+        c800: .lime800,
+        c900: .lime900
+    )
+    
+    static let green = WindColor(
+        c50: .green50,
+        c100: .green100,
+        c200: .green200,
+        c300: .green300,
+        c400: .green400,
+        c500: .green500,
+        c600: .green600,
+        c700: .green700,
+        c800: .green800,
+        c900: .green900
+    )
+    
+    static let emerald = WindColor(
+        c50: .emerald50,
+        c100: .emerald100,
+        c200: .emerald200,
+        c300: .emerald300,
+        c400: .emerald400,
+        c500: .emerald500,
+        c600: .emerald600,
+        c700: .emerald700,
+        c800: .emerald800,
+        c900: .emerald900
+    )
+    
+    static let teal = WindColor(
+        c50: .teal50,
+        c100: .teal100,
+        c200: .teal200,
+        c300: .teal300,
+        c400: .teal400,
+        c500: .teal500,
+        c600: .teal600,
+        c700: .teal700,
+        c800: .teal800,
+        c900: .teal900
+    )
+    
+    static let cyan = WindColor(
+        c50: .cyan50,
+        c100: .cyan100,
+        c200: .cyan200,
+        c300: .cyan300,
+        c400: .cyan400,
+        c500: .cyan500,
+        c600: .cyan600,
+        c700: .cyan700,
+        c800: .cyan800,
+        c900: .cyan900
+    )
+    
+    static let sky = WindColor(
+        c50: .sky50,
+        c100: .sky100,
+        c200: .sky200,
+        c300: .sky300,
+        c400: .sky400,
+        c500: .sky500,
+        c600: .sky600,
+        c700: .sky700,
+        c800: .sky800,
+        c900: .sky900
+    )
+    
+    static let blue = WindColor(
+        c50: .blue50,
+        c100: .blue100,
+        c200: .blue200,
+        c300: .blue300,
+        c400: .blue400,
+        c500: .blue500,
+        c600: .blue600,
+        c700: .blue700,
+        c800: .blue800,
+        c900: .blue900
+    )
+    
+    static let indigo = WindColor(
+        c50: .indigo50,
+        c100: .indigo100,
+        c200: .indigo200,
+        c300: .indigo300,
+        c400: .indigo400,
+        c500: .indigo500,
+        c600: .indigo600,
+        c700: .indigo700,
+        c800: .indigo800,
+        c900: .indigo900
+    )
+    
+    static let violet = WindColor(
+        c50: .violet50,
+        c100: .violet100,
+        c200: .violet200,
+        c300: .violet300,
+        c400: .violet400,
+        c500: .violet500,
+        c600: .violet600,
+        c700: .violet700,
+        c800: .violet800,
+        c900: .violet900
+    )
+    
+    static let purple = WindColor(
+        c50: .purple50,
+        c100: .purple100,
+        c200: .purple200,
+        c300: .purple300,
+        c400: .purple400,
+        c500: .purple500,
+        c600: .purple600,
+        c700: .purple700,
+        c800: .purple800,
+        c900: .purple900
+    )
+    
+    static let fuchsia = WindColor(
+        c50: .fuchsia50,
+        c100: .fuchsia100,
+        c200: .fuchsia200,
+        c300: .fuchsia300,
+        c400: .fuchsia400,
+        c500: .fuchsia500,
+        c600: .fuchsia600,
+        c700: .fuchsia700,
+        c800: .fuchsia800,
+        c900: .fuchsia900
+    )
+    
+    static let pink = WindColor(
+        c50: .pink50,
+        c100: .pink100,
+        c200: .pink200,
+        c300: .pink300,
+        c400: .pink400,
+        c500: .pink500,
+        c600: .pink600,
+        c700: .pink700,
+        c800: .pink800,
+        c900: .pink900
+    )
+    
+    static let rose = WindColor(
+        c50: .rose50,
+        c100: .rose100,
+        c200: .rose200,
+        c300: .rose300,
+        c400: .rose400,
+        c500: .rose500,
+        c600: .rose600,
+        c700: .rose700,
+        c800: .rose800,
+        c900: .rose900
+    )
+}
+
+@available(iOS 13.0, *)
+public extension Color {
     
     static let slate50: Color = Color(red: 248/255, green: 250/255, blue: 252/255)
     static let slate100: Color = Color(red: 241/255, green: 245/255, blue: 249/255)
@@ -233,4 +541,45 @@ extension Color {
     
 }
 
+// MARK: - Spacing
+public extension CGFloat {
+    
+    static let base: Self = 4
+    
+    static let s1h: Self = base * 1.5
+    static let s2h: Self = base * 2.5
+    static let s3h: Self = base * 3.5
+    
+    static let px: Self = 1
+    static let s05: Self = base / 2
+    static let s1: Self = base * 1
+    static let s2: Self = base * 2
+    static let s3: Self = base * 3
+    static let s4: Self = base * 4
+    static let s5: Self = base * 5
+    static let s6: Self = base * 6
+    static let s7: Self = base * 7
+    static let s8: Self = base * 8
+    static let s9: Self = base * 9
+    static let s10: Self = base * 10
+    static let s11: Self = base * 11
+    static let s12: Self = base * 12
+    static let s14: Self = base * 14
+    static let s16: Self = base * 16
+    static let s20: Self = base * 20
+    static let s24: Self = base * 24
+    static let s28: Self = base * 28
+    static let s32: Self = base * 32
+    static let s36: Self = base * 36
+    static let s40: Self = base * 40
+    static let s44: Self = base * 44
+    static let s48: Self = base * 48
+    static let s52: Self = base * 52
+    static let s56: Self = base * 56
+    static let s60: Self = base * 60
+    static let s64: Self = base * 64
+    static let s72: Self = base * 72
+    static let s80: Self = base * 80
+    static let s96: Self = base * 96
+}
 

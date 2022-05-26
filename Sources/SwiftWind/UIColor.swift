@@ -7,9 +7,8 @@
 
 import UIKit
 
-extension UIColor {
-    
-   
+public extension UIColor {
+  
     static let slate50: UIColor = UIColor(248, 250, 252)
     static let slate100: UIColor = UIColor(241, 245, 249)
     static let slate200: UIColor = UIColor(226, 232, 240)
