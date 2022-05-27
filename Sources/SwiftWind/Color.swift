@@ -9,16 +9,16 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct WindColor {
-    let c50: Color
-    let c100: Color
-    let c200: Color
-    let c300: Color
-    let c400: Color
-    let c500: Color
-    let c600: Color
-    let c700: Color
-    let c800: Color
-    let c900: Color
+    public let c50: Color
+    public let c100: Color
+    public let c200: Color
+    public let c300: Color
+    public let c400: Color
+    public let c500: Color
+    public let c600: Color
+    public let c700: Color
+    public let c800: Color
+    public let c900: Color
 }
 
 @available(iOS 13.0, *)
